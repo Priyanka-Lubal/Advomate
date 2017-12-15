@@ -50,13 +50,16 @@ http://www.templatemo.com/tm-486-new-event
 		<!-- navbar header -->
 		<div class="navbar-header">
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></i></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
 			<h1 class="wow fadeInUp" data-wow-delay="1.6s">Advomate</h1>
 		</div>
 
+	</div>
+	<div id="cart">
+		<a href="#" id='cart_button' style="color: #000000"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true" style="margin-right: 50px;"></i></a>
 	</div>
 </div>
 
@@ -70,7 +73,7 @@ http://www.templatemo.com/tm-486-new-event
 
 			<div class="col-md-12 col-sm-12">
 				<h1 class="wow fadeInUp" data-wow-delay="1.6s" style="color: #000000">Buy Stamp Paper</h1>
-				<h3 class="wow bounceIn" data-wow-delay="0.9s" style="color: #000000">Buy Stamp paer and E-stamp paper for the state of maharashtra in just a few clicks</h3>
+				<h3 class="wow bounceIn" data-wow-delay="0.9s" style="color: #000000">Buy Stamp paper and E-stamp paper for the state of maharashtra in just a few clicks</h3>
 			</div>
 
 
@@ -97,17 +100,17 @@ http://www.templatemo.com/tm-486-new-event
 				<p>Advomate</p>
 				<label for="value1" id="label-value1">Value:</label>
 				<select id="value1">
-  					<option value="100">100</option>
-  					<option value="500">500</option>
-  					<option value="1000">1000</option>
-  					<option value="5000">5000</option>
+  					<option data-name="Non Judicial Stamp Paper" value="100" price="135">100</option>
+  					<option data-name="Non Judicial Stamp Paper" value="500" price="550">500</option>
+  					<option data-name="Non Judicial Stamp Paper" value="1000" price="1090">1000</option>
+  					<option data-name="Non Judicial Stamp Paper" value="5000" price="5400">5000</option>
 				</select>
 				<label for="type" style="margin-left: 20px" id="label-type">Type:</label>
   				<select id="type">
   					<option value="Non Judicial">Non Judicial</option>
 				</select>
   				<input id="quantity" type="number" name="quantity" placeholder="Quantity" style="margin-left: 20px"><br><br>
-  				<button type="button" class="btn btn-dark" onclick="addtocart()">Add to Cart</button><br><br>
+  				<button type="button" class="btn btn-dark add-to-cart1">Add to Cart</button><br><br>
   				<p>E-Stamp paper is a computerbased system to pay stamp duty securely t the government as an alternative to the prevalling system of the Non Judicial stamp paper. As of today, it is used only for documents that are registrable with the sub-register.</p>
 			</div>
 					
@@ -126,7 +129,7 @@ http://www.templatemo.com/tm-486-new-event
 	<div class="container">
 		<div class="row">
 
-			<div id="before2"class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
+			<div id="before2" class="wow fadeInUp col-md-6 col-sm-6" data-wow-delay="0.6s">
 				<h3>Non Judicial E-Stamp Paper</h3>
 				<p>E-Stamp paper is a computerbased system to pay stamp duty securely t the government as an alternative to the prevalling system of the Non Judicial stamp paper. As of today, it is used only for documents that are registrable with the sub-register.(Click here for complete list)</p>
 				<button type="button" class="btn btn-info" onclick="buy2()">Buy</button>
@@ -135,20 +138,20 @@ http://www.templatemo.com/tm-486-new-event
 			<div id="after2" class="col-md-6 col-sm-6" style="display: none;">
 				<h3>Non Judicial E-Stamp Paper</h3>
 				<p>Advomate</p>
-				<label for="value1" id="label-value1">Value:</label>
-				<select id="value1">
-    				<option>20</option>
-    				<option>50</option>
-    				<option>100</option>
-    				<option>200</option>
-    				<option>250</option>
-    				<option>500</option>
-    				<option>1000</option>
-    				<option>2000</option>
-    				<option>5000</option>
+				<label for="value2" id="label-value1">Value:</label>
+				<select id="value2">
+    				<option name="Non Judicial E-Stamp Paper" value="20" price="135">20</option>
+    				<option name="Non Judicial E-Stamp Paper" value="50" price="135">50</option>
+    				<option name="Non Judicial E-Stamp Paper" value="100" price="135">100</option>
+    				<option name="Non Judicial E-Stamp Paper" value="200" price="135">200</option>
+    				<option name="Non Judicial E-Stamp Paper" value="250" price="135">250</option>
+    				<option name="Non Judicial E-Stamp Paper" value="500" price="135">500</option>
+    				<option name="Non Judicial E-Stamp Paper" value="1000" price="135">1000</option>
+    				<option name="Non Judicial E-Stamp Paper" value="2000" price="135">2000</option>
+    				<option name="Non Judicial E-Stamp Paper" value="5000" price="135">5000</option>
   				</select>
   				<input id="quantity" type="number" name="quantity" placeholder="Quantity" style="margin-left: 20px"><br><br>
-  				<button type="button" class="btn btn-dark" onclick="addtocart()">Add to Cart</button><br><br>
+  				<button type="button" class="btn btn-dark add-to-cart2">Add to Cart</button><br><br>
   				<p>E-Stamp paper is a computerbased system to pay stamp duty securely t the government as an alternative to the prevalling system of the Non Judicial stamp paper. As of today, it is used only for documents that are registrable with the sub-register.</p>
 			</div>
 
@@ -191,6 +194,26 @@ http://www.templatemo.com/tm-486-new-event
 </section>
 
 <!-- =========================
+    TESTIMONIALS   
+============================== -->
+<section id="shopping_cart" class="parallax-section" style="display: none;">
+	<div class="container">
+		<div class="row">
+
+			<div style="width: 100%">
+				<center><h3>Cart</h3></center>
+				<div class="table-responsive">
+                    <table class="table table-hover" id="show-cart">
+                    </table>
+                    <p><a href="#" id="submit" class="btn btn-primary" role="button">Checkout</a></p>
+    			</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- =========================
     CONTACT SECTION   
 ============================== -->
 <section id="contact" class="parallax-section">
@@ -211,7 +234,7 @@ http://www.templatemo.com/tm-486-new-event
 					<div class="section-title">
 						<h2>Keep in touch</h2>
 					</div>
-					<form action="form-handler-nodb.php" method="post">
+					<form role="form" method="post" action="form-handler-nodb.php">
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name">
 					  	<input name="email" type="email" class="form-control" id="email" placeholder="Email">
 					  	<textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
@@ -252,7 +275,6 @@ http://www.templatemo.com/tm-486-new-event
 		</div>
 	</div>
 </footer>
-
 
 <!-- Back top -->
 <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>

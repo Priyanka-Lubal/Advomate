@@ -1,5 +1,10 @@
 <?php
-require 'PHPMailer/PHPMailerAutoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
@@ -16,7 +21,7 @@ $mail = new PHPMailer;
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'priyankalubal18@gmail.com';                 // SMTP username
-    $mail->Password = 'abc18897abc';                           // SMTP password
+    $mail->Password = 'abc220702abc';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
@@ -33,7 +38,7 @@ $mail = new PHPMailer;
     $mail->Body = $msg;
 
     if (!$mail->send()) {
-        header("location: contact.php?connection_failure=mailnotsent");
+        header("location: index.html?connection_failure=mailnotsent");
         echo 'Mailer Error: ' . $mail->ErrorInfo;
     } else {
         header("location: index.html");
